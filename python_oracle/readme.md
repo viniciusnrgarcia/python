@@ -16,6 +16,8 @@ pass = MyPasswd123
 
 https://cx-oracle.readthedocs.io/en/latest/user_guide/installation.html
 
+https://help.ubuntu.com/community/Oracle%20Instant%20Client
+
 https://www.oracle.com/database/technologies/instant-client.html
 
 ## 5- Criar usurio

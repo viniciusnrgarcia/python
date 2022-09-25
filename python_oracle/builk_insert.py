@@ -26,11 +26,7 @@ cursor.close()
 cursor = conn.cursor()
 elapsed_time = time.perf_counter()
 
-c = 1
-for item in range(500000):
-    n = "Test {} ".format(c)
-    t = datetime.datetime.now()
-    cursor.execute("""
+sql = ("""
                INSERT INTO customer (customer_id,
                name,
                last_name,
@@ -49,15 +45,19 @@ for item in range(500000):
                 :user_creation,
                 sysdate,
                 :user_modified)
-          """,
-                   name=n,
-                   last_name=n,
-                   affiliation=t,
-                   customer_type='10',
-                   user_creation='user_system_test',
-                   user_modified='user_system_test'
-                   )
+          """)
+
+s = []
+c = 1
+for item in range(500000):
+    n = "Test {} ".format(c)
+    t = datetime.datetime.now()
+    s.append(
+        (n, n, t, '10', 'user_system_test', 'user_system_test')
+    )
     c += 1
+
+cursor.executemany(sql, s)
 
 cursor.close()
 
