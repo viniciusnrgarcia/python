@@ -21,3 +21,37 @@ for i in array:
         array.append('Ana')
         array.append('Layza')
         array.append('Vinicius')
+
+print(array)
+print(array[::-1])
+
+l1 = [1, 2, 3]
+l2 = [4, 5, 6]
+l3 = l1 + l2
+
+print(l1)
+print(l2)
+print(l3)
+l1.append(4)
+print(l1)
+
+print(len(l3))
+
+l3.reverse()
+
+print(l3)
+
+l3.reverse()
+
+for i in l3:
+    if i > 4:
+        l3.remove(6)
+    print(i, l3)
+
+print(max(l3), min(l3))
+
+l4 = list(range(1, 100))
+print(l4)
+
+for i in l4:
+    print(i)
