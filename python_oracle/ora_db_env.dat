@@ -23,7 +23,7 @@ DB_PASSWD=MyPasswd123
 ## db domain
 ## default : localdomain
 
-DB_DOMAIN=my.domain.com
+DB_DOMAIN=localhost
 
 ## db bundle
 ## default : basic
