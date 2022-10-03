@@ -55,3 +55,19 @@ print(l4)
 
 for i in l4:
     print(i)
+
+l5 = list(range(1, 10))
+
+print(l5)
+l6 = l5.pop()
+print(l5)
+print(l6)
+
+secret = 'python'
+secret_temp = 'pn'
+
+for l in secret:
+    print(l)
+    if l in secret_temp:
+        print(l, secret_temp)
+
