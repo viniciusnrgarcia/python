@@ -9,3 +9,10 @@ l2 = array('i', [0, 1, 2])
 for i in l:
     print(i)
 
+itens = ''
+for i in list(range(1, 101)):
+    itens += '"' + f'{str(i)}' + '"' + ","
+
+print(itens)
+
+

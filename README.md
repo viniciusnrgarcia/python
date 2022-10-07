@@ -8,7 +8,7 @@ https://peps.python.org/pep-0008/#package-and-module-names
 
 https://google.github.io/styleguide/pyguide.html#3164-guidelines-derived-from-guidos-recommendations
 
-```
+```text
 Type	    Public            	            Internal
 Packages	lower_with_under	
 Modules 	lower_with_under            	_lower_with_under
@@ -22,3 +22,70 @@ Method Names	lower_with_under()	        _lower_with_under() (protected)
 Function/Method Parameters              	lower_with_under	
 Local Variables	lower_with_under	
 ```
+
+### Estrutura de diretórios 
+
+```markdown
+/project_folder
+  /name
+     project_name.py
+     cli.py
+  /tests
+     __init__.py
+     __pycache__
+     test_name.py
+  /docs
+     index.md
+ LICENSE
+ mkdocs.yml
+ poetry.lock
+ pyproject.toml
+```
+
+
+### Formatadores de código
+https://pep8.org
+
+* blue
+* dark
+* isort
+* autopep8
+* YAPF
+* darker*
+
+#### install blue
+```shell
+$ poetry add --dev blue
+$ blue seu_arquivo.py
+$ git diff # to visualize
+$ blue . # to apply to all files in your project.
+$ poetry add --dev isort
+$ isort . --c # -c to check
+$ isort . # to apply
+```
+
+
+### Criadores de documentação
+
+* mkdocs
+* sphinx
+
+```shell
+$ poetry add --dev mkdocs
+$ mkdocs new .
+$ mkdcos serve
+```
+
+
+### Análise estática
+
+* Erros de sintaxe
+* Potenciais problemas
+  * Nomes duplicados
+  * Nomes ruins
+  * Códigos inseguros
+* Análise de complexidade de código
+* Violações de convenções 
+  * PEP-8
+  * PEP-257
+
