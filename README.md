@@ -89,3 +89,59 @@ $ mkdcos serve
   * PEP-8
   * PEP-257
 
+#### Ferramentas
+* flake
+* pylint
+* pydocstyle
+* bandit
+* Radon
+* Prospector
+* mypy
+
+```shell
+$ poetry add --dev prospector
+$ prospector # at projetct folder
+
+```
+
+#### GNU Make
+
+Automatizar comandos
+
+```shell
+# install make
+$ blue isort
+# example
+# Makefile
+.PHONY: install formt lint test sec
+
+install:
+        @poetry install # @ oculta execuçao do comando.
+format:
+        @blue .
+        @isort .
+lint:
+        @blue --check .
+        @isort --check .
+        @propector --with-tool pep257 --doc-warning
+test:
+        @pytest -v
+sec:
+        @pip-audit
+   
+# executando os comandos
+$ make install
+$ make format
+$ make lint
+$ make test  
+```
+
+```shell
+$ nano .git/hooks/pre-commit
+$ make lint 
+$ chmod +x .git/hooks/pre-commit
+$ git add . && git commit 'Test'
+# error
+
+```
+

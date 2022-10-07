@@ -26,3 +26,12 @@ print(type(data_atual))
 
 print('IMC (indice de massa corporal): ', imc)
 print(type("""40"""))
+
+
+x = 10
+y = 'Vinicius'
+
+print(f'x={x} e y={y}')
+
+x, y = y, x
+print(f'x={x} e y={y}')
