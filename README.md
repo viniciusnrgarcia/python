@@ -1,7 +1,7 @@
 # Python
 
-###  
-https://www.udemy.com/course/python-3-do-zero-ao-avancado/learn/lecture/15099364#overview
+### Install
+
 
 ### Conventions
 https://peps.python.org/pep-0008/#package-and-module-names
@@ -145,3 +145,7 @@ $ git add . && git commit 'Test'
 
 ```
 
+ 
+
+### Referências
+https://www.udemy.com/course/python-3-do-zero-ao-avancado/learn/lecture/15099364#overview
