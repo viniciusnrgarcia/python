@@ -59,7 +59,7 @@ for i in l4:
 l5 = list(range(1, 10))
 
 print(l5)
-l6 = l5.pop()
+l6 = l5.pop() # remove o último elemento da lista
 print(l5)
 print(l6)
 
@@ -71,3 +71,24 @@ for l in secret:
     if l in secret_temp:
         print(l, secret_temp)
 
+
+l4.clear() # limpa a lista
+
+
+### Join lists
+
+list_a = [1, 2, 3]
+list_b = [4, 5, 6]
+list_c = list_a + list_b
+print(list_c)
+
+print(list_a)
+list_d = list_a.extend(list_b) # Realiza junção da lista A, adicionando conteúdo (extendendo) da segunda coleção.
+print(list_d)
+print(list_a)
+print(list_b)
+
+list_e = [1, 2, '3']
+list_f = list_e.copy() # copiando listas
+
+print(list_f)

@@ -18,3 +18,4 @@ message = 'user allowed' if logged_user else 'user not allowed'
 print(message)
 
 
+print( 'retorno' if 1 <= 10 else 'outro retorno')
