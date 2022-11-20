@@ -145,7 +145,33 @@ $ git add . && git commit 'Test'
 
 ```
 
- 
+
+
+### FASTAPI
+https://fastapi.tiangolo.com/
+https://fastapi.tiangolo.com/deployment/docker/
+
+```shell
+$ pip install fastapi
+$ pip install "uvicorn[standard]"   
+# Running app
+$ uvicorn main:app --reload
+
+# The most common way to do it is to have a file requirements.txt with the package names and their versions, one per line.
+$ pip install -r requirements.txt
+
+# Build image
+$ docker build -t fastapi_example .
+$ docker run --rm -d --name fastapi_example -p 8000:8000 fastapi_example
+``` 
+
+
 
 ### Referências
 https://www.udemy.com/course/python-3-do-zero-ao-avancado/learn/lecture/15099364#overview
+https://fastapi.tiangolo.com/deployment/docker/
+https://fastapi.tiangolo.com/deployment/docker/
+https://fastapi.tiangolo.com/alternatives/
+https://peps.python.org/pep-0008/#package-and-module-names
+https://google.github.io/styleguide/pyguide.html#3164-guidelines-derived-from-guidos-recommendations
+https://github.com/tiangolo/full-stack-fastapi-postgresql
