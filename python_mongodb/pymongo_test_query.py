@@ -7,7 +7,7 @@ transaction = dbname["transaction"]
 
 start_time = time.time()
 
-file = open('/home/vinicius/Development/python-workspace/python/mongodb/result.csv', 'w')
+file = open('/tmp/result.csv', 'w')
 
 count = 0
 cancel_details = cancel.find()

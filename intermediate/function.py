@@ -66,3 +66,30 @@ print(exec1)
 
 exec2 = f1(f3, 'Vinicius', s='Garcia')
 print(exec2)
+
+
+"""
+Escopo de funções em Python
+* Escopo global é todo código alcançavel.
+* Escopo local é apenas no mesmo local.
+"""
+
+# global scope
+x = 1
+
+def f1():
+    # inner scope
+    x = 10
+    print(x)
+
+def f2():
+    global x # não recomando
+    x = x + 2
+    print(f'global X: {x}')
+
+print(x) 
+f1()
+print(x) 
+
+f2()
+print(x)
