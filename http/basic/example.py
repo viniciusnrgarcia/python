@@ -10,7 +10,7 @@ headers = {
     'accept': 'application/json'
 }
 
-body = {'doc':123',id':'123'}
+body = {'doc':'123','id':'123'}
 
 response = requests.post(url=url, headers=headers, json=body, verify=cer)
 print(response.status_code, response.json())
