@@ -3,6 +3,16 @@
 ### Install
 
 
+###
+#### Poetry
+PYTHON PACKAGING AND DEPENDENCY MANAGEMENT MADE EASY
+https://python-poetry.org/
+
+```shel
+curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py | python -
+```
+
+
 ### Conventions
 https://peps.python.org/pep-0008/#package-and-module-names
 
