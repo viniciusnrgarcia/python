@@ -177,6 +177,25 @@ $ docker run --rm -d --name fastapi_example -p 8000:8000 fastapi_example
 
 
 
+
+### Ambiente VENV
+
+```shell
+$ python -m venv .venv
+```
+
+Export requirements.txt
+```shell
+$ pip freeze > requirements.txt
+```
+
+Update libs from requirements.txt
+```shell
+$ pip install -r requirements.txt
+```
+
+
+
 ### Referências
 https://www.udemy.com/course/python-3-do-zero-ao-avancado/learn/lecture/15099364#overview
 https://fastapi.tiangolo.com/deployment/docker/
