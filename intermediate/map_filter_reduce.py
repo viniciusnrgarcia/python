@@ -8,7 +8,7 @@ def print_iter(iterator):
 
 l1 = [
     {'n': 'Layza', 'idade': 31},
-    {'n': 'Viniicus', 'idade': 34},
+    {'n': 'Vinicius', 'idade': 34},
     {'n': 'Heitor', 'idade': 3},
     {'n': 'Layza', 'idade': 31},
     {'n': 'Layza', 'idade': 31}
@@ -35,6 +35,8 @@ def add_sum(item):
     }
 
 
+
+## map
 l3 = map(
     add_sum,
     l1
@@ -78,3 +80,36 @@ l6 = reduce(
     0
 )
 print(l6)
+
+
+products = [
+    {'name':'Produto 1', 'price': 10.00},
+    {'name':'Produto 2', 'price': 50.00},
+    {'name':'Produto 3', 'price': 200.00},
+]
+
+total = 0
+for p in products:
+    total += p['price']
+
+print('Total: ', total)
+
+print('Total: ', sum([p['price'] for p in products]))
+
+def function_reduce(prev, product):
+    return prev + product['price']
+
+total = reduce(
+    function_reduce,
+    products,
+    0
+)
+
+print('Total: ', total)
+
+# utilizar sempre que possível lambda passando a function
+total_reduce = reduce(lambda prev, product: prev + product['price'], 
+        products,
+        0)
+
+print('Total: ', total_reduce)
