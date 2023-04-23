@@ -21,5 +21,16 @@ with open(output_file, 'w', encoding='utf8') as csv_file:
     csv_file.write('Linha por execução à atenção 4\n')
     csv_file.close()
 
+# remove arquivo 
+os.remove(output_file)
 
+with open(output_file, 'w', encoding='utf8') as csv_file:
+    csv_file.write('Linha 1\n')
+    csv_file.write('Linha 2\n')
+    csv_file.write('Linha por execução à atenção 4\n')
+    csv_file.close()
+
+
+# ou
+os.unlink(output_file)
 
