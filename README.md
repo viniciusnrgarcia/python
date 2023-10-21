@@ -179,9 +179,10 @@ $ docker run --rm -d --name fastapi_example -p 8000:8000 fastapi_example
 
 
 ### Ambiente VENV
+https://docs.python.org/pt-br/3/library/venv.html
 
 ```shell
-$ python -m venv .venv
+$ python -m venv .venv # nome ambiente virtual
 ```
 
 Export requirements.txt
