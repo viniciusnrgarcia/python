@@ -5,13 +5,14 @@ from pydantic import BaseModel
 class ProductResponse(BaseModel):
 
     id: str
-    creation: date
+    name: str
+    description: str
 
     def __repr__(self):
         return self.to_str()
     
     def __eq__(self, other):
-        if not isinstance(other, Product):
+        if not isinstance(other, ProductResponse):
             return False
         return self.__dict__ == other.__dict__
     
