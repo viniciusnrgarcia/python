@@ -180,6 +180,7 @@ $ docker run --rm -d --name fastapi_example -p 8000:8000 fastapi_example
 
 ### Ambiente VENV
 https://docs.python.org/pt-br/3/library/venv.html
+https://docs.python.org/pt-br/dev/library/venv.html
 
 ```shell
 $ python -m venv .venv # nome ambiente virtual
@@ -193,6 +194,11 @@ $ pip freeze > requirements.txt
 Update libs from requirements.txt
 ```shell
 $ pip install -r requirements.txt
+```
+
+Active virtual venv
+```shell
+source <venv>/bin/activate
 ```
 
 
